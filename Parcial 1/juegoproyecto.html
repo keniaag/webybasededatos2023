@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <script src="code.jquery.com_jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="JuegoJS.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 100%;
+            background-color: rgba(200, 222, 230, 0.514);
+        }
+
+        article {
+            width: 30%;
+            height: 200px;
+            float: left;
+        }
+
+        aside {
+            width: 70%;
+            height: 200px;
+            float: left;
+        }
+        #h3{
+            font-size: 700%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juego del ahorcado</h1>
+    <hr><br>
+    <article>
+        <img id="img" src="imagenes/ahorcado.png" width="200px">
+    </article>
+    <aside id="aside-container">
+        <p id="h3">
+
+        </p>
+    </aside>
+    <button id="boton1">Iniciar Juego</button><br><br>
+    <input id="letra" type="text" placeholder="Dame una letra" maxlength="1">
+    <button id="boton">Comprobar</button>
+    <h2>Número de fallos: <span id="intentos">0</span></h2>
+
+
+</body>
+</html>
