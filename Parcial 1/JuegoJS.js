@@ -15,6 +15,7 @@ $(document).ready(function(){
         letrasAdivinadas = [];
         $("#intentos").text(intentos);
         console.log("funciona")
+        boton1.disabled=true;
     });
 
     $("#boton").click(function (e) {

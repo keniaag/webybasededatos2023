@@ -13,7 +13,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             width: 100%;
-            background-color: rgba(200, 222, 230, 0.514);
+            background-color: rgba(172, 222, 240, 0.514);
         }
 
         article {
@@ -30,11 +30,19 @@
         #h3{
             font-size: 700%;
         }
+        .title{
+            background-color: rgb(41, 134, 196);
+            color: white;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
+    <div class="title">
     <h1>Juego del ahorcado</h1>
-    <hr><br>
+</div>
+    <br>    
+    <h2>Número de fallos: <span id="intentos">0</span></h2><br>
     <article>
         <img id="img" src="imagenes/ahorcado.png" width="200px">
     </article>
@@ -43,10 +51,9 @@
 
         </p>
     </aside>
-    <button id="boton1">Iniciar Juego</button><br><br>
+    <button id="boton1" class="btn btn-primary">Iniciar Juego</button><br><br>
     <input id="letra" type="text" placeholder="Dame una letra" maxlength="1">
-    <button id="boton">Comprobar</button>
-    <h2>Número de fallos: <span id="intentos">0</span></h2>
+    <button id="boton" class="btn btn-primary">Comprobar</button>
 
 
 </body>
