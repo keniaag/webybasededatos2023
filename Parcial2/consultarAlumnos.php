@@ -35,17 +35,17 @@
                                 </tr>
                             </thead>
                                 <tbody>
-                                    <?php while($registro = $datos->fetch_assoc()){ ?>
+                                <?php while($registro = $datos->fetch_assoc()){ ?>
                                         <tr>
                                             <td><?php echo $registro ["id"]; ?></td>
                                             <td><?php echo $registro ["nombre"]; ?></td>
-                                            <td><?php echo $registro ["numero_control"]; ?></td>
+                                            <td><?php echo $registro["numero_control"]; ?></td>
                                             <td><?php echo $registro ["semestre"]; ?></td>
                                             <td><?php echo $registro ["edad"]; ?></td>
                                             <td><?php echo $registro ["turno"]; ?></td>
                                             <td><?php echo $registro ["sexo"]; ?></td>
                                             <td>
-                                                <a href="editarAlumnos.php?id=<?php echo $registro["id"]; ?>" class="btn btn-sm btn-primary">Editar</a>
+                                                <a href="editarAlumno.php?id=<?php echo $registro["id"]; ?>" class="btn btn-sm btn-primary">Editar</a>
                                                 <a href="eliminarAlumno.php?id=<?php echo $registro["id"]; ?>" class="btn btn-sm btn-danger">Eliminar</a>
                                             </td>
                                         </tr>
@@ -64,13 +64,11 @@
             </div>
          </div>
         </div>
-
          <footer class="text-center">
             <hr>
             CETIS 107 &copy; 2023
-            
 
          </footer>
-         <script src="js/bootstrap.min.js"></script>
+         <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
