@@ -18,6 +18,19 @@
             <li><a class="dropdown-item" href="consultarAlumnos.php">Consultar alumnos</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="RegistrarAlumno.php">Registar alumno</a></li>
+            <li><a class="dropdown-item" href="RegistrarMaterias.php">Materias</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Materias
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="droptown-item" href="inicio.php">Inicio</a></li>
+            <li><a class="droptown-item" href="consultarMaterias.php">Consultar Materias</a></li>
+            <li><hr class="droptown-divider"></li>
+            <li><a class="droptown-item" href="RegistrarMaterias.php">Registrar Materias</a></li>
           </ul>
         </li>
       </ul>
